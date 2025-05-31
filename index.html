@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="scripts.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h2 id="result-bar">Click any button to start game</h2>
+      </div>
+      <div class="buttons">
+        <button data-choice="rock" id="rock-btn">ROCK</button>
+        <button data-choice="paper" id="paper-btn">PAPER</button>
+        <button data-choice="scissors" id="scissors-btn">SCISSORS</button>
+      </div>
+
+      <div class="score-card">
+        <div>
+          <h3>Human Score</h3>
+          <h3 class="human-score">0</h3>
+        </div>
+        <div>
+          <h3>Computer Score</h3>
+          <h3 class="computer-score">0</h3>
+        </div>
+      </div>
+      <div class="reset">
+        <button id="reset-btn" style="display: none">New Game</button>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
 </html>
